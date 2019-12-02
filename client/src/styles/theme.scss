@@ -1,0 +1,15 @@
+.normal {
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.gdimp {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: cyan; /* For browsers that do not support gradients */
+  background: linear-gradient(to bottom right, red, orange , yellow, lightgreen, cyan, blue, violet); /* Standard syntax (must be last) */
+
+  footer {
+    font-family: "Papyrus", fantasy;
+    font-weight: 800;
+  }
+}
