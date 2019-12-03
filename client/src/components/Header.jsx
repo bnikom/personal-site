@@ -6,17 +6,17 @@ const Header = ({ GDIMPoff }) => {
 
   return (
     <header>
-        <Navbar color="faded" light>
+      <Navbar color="faded" light>
         <NavbarBrand href="/" className="mr-auto">
-        <div className="slogan">
-            <h1 className="first">BELLA NIKOM</h1>
-            {GDIMPoff &&
-              <>
-                <h1 className="second">BELLA NIKOM</h1>
-                <h1 className="third">BELLA NIKOM</h1>
-              </>
-            }
-          </div>
+          {GDIMPoff ?
+            <div className="slogan">
+              <h1 className="first">BELLA NIKOM</h1>
+              <h1 className="second">BELLA NIKOM</h1>
+              <h1 className="third">BELLA NIKOM</h1>
+            </div>
+            :
+            <h1>BELLA NIKOM</h1>
+          }
         </NavbarBrand>
         <NavbarToggler onClick={() => setCollapsed(!collapsed)} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>

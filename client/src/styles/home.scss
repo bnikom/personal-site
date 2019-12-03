@@ -1,6 +1,5 @@
 .home-container {
-  height: 55vh;
-  margin: 20px;
+  padding: 20px;
 }
 
 .star {
@@ -9,6 +8,27 @@
 
 .you-did-it {
   position: relative;
-  right: 150px;
+  left: 50px;
   font-size: 40px;
+  bottom: 130px;
+}
+
+.aristocats {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  animation:spin 8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  100% {
+    -webkit-transform: rotate(360deg); transform:rotate(360deg);
+    top: 100vh;
+    left: 100vw;
+  }
 }

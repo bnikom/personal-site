@@ -5,6 +5,9 @@
 @import './travelMap.scss'; 
 @import './home.scss'; 
 
+main {
+  min-height: calc(100vh - 240px);
+}
 
   .react-toggle {
     touch-action: pan-x;

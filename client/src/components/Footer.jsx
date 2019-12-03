@@ -23,7 +23,7 @@ const Footer = ({ handleGDIMPTheme, GDIMPoff }) => {
               className="mx-2"
               id="GDIMP-label"
               icons={false}
-              defaultChecked={GDIMPoff}
+              defaultChecked={(localStorage.getItem('GDIMPoff') === 'true') || GDIMPoff}
               onChange={() => handleGDIMPTheme(!GDIMPoff)}
               aria-label="toggle to change colour formatting"
             />

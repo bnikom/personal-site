@@ -20,15 +20,14 @@ const TravelMap = () => {
   const handleMapClick = ({ lngLat, leftButton }) => {
     if (!leftButton) return;
     const [longitude, latitude] = lngLat;
-    console.log(latitude, longitude)
   }
 
   return (
-    <>
+    <main>
       <ReactMapGL
         width='100%'
         // height="calc(100vh - 64px)"
-        height="55vh"
+        height="80vh"
         mapStyle="mapbox://styles/mapbox/streets-v9"
         mapboxApiAccessToken="pk.eyJ1IjoiYm5pa29tIiwiYSI6ImNrMHNxbjgwNjAxN2MzbnBlZXNnZ3Rtc2gifQ.PQbU0Gc9uGPX90rMxbJcaw"
         onViewportChange={({ width, height, ...etc}) => setViewport(etc)}
@@ -82,7 +81,7 @@ const TravelMap = () => {
         
       </ReactMapGL>
 
-    </>
+    </main>
   );
 };
 
