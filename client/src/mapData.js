@@ -27,7 +27,7 @@ const mapData = [
     "city": "Berlin",
     "country": "Germany",
     "image": '/images/berlin_map.jpg',
-    "comments": "absolutely scadalized at the art of the Berlin Wall",
+    "comments": "absolutely scandalized at the art of the Berlin Wall",
     "latitude": 52.5200,
     "longitude": 13.4050,
   },{

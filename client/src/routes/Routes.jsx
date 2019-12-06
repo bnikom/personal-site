@@ -23,7 +23,7 @@ const Routes = ({ GDIMPoff }) => {
         />
         <Route
           path='/charities'
-          component={Charities}
+          render={(props) => <Charities {...props} GDIMPoff={GDIMPoff} />}
         />
       </Switch>
     </BrowserRouter>

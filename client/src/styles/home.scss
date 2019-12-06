@@ -2,15 +2,15 @@
   padding: 20px;
 }
 
-.star {
-  height: 200px;
+ .star {
+  width: 170px;
 }
 
 .you-did-it {
   position: relative;
   left: 50px;
   font-size: 40px;
-  bottom: 130px;
+  bottom: 110px;
 }
 
 .aristocats {
@@ -23,8 +23,8 @@
 
 @keyframes spin {
   0% {
-    top: 0;
-    left: 0;
+    top: -200px;
+    left: -200px;
   }
   100% {
     -webkit-transform: rotate(360deg); transform:rotate(360deg);

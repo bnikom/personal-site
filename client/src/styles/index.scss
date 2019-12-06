@@ -4,6 +4,19 @@
 @import './header.scss';
 @import './travelMap.scss'; 
 @import './home.scss'; 
+@import './charities.scss';
+
+$link-color: #0000FF;
+
+a {
+  color: $link-color;
+  &:focus,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $link-color;
+  }
+}
 
 main {
   min-height: calc(100vh - 240px);

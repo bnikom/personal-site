@@ -11,13 +11,14 @@ const Home = ({ GDIMPoff }) => {
         <>
           <Row>
             <Col xs={{ size: 6, offset: 6 }}>
-              <img className="star" src='/images/png_star.png' />
+              <img className="star" src='/images/png_star.png' alt="star" />
               <p className="you-did-it">you did it</p>
             </Col>
           </Row>
           <img
             src="/images/aristocats.png"
             className="aristocats"
+            alt="aristocats"
           />
         </>
       }

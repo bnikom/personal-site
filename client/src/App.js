@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './styles/App.scss';
+import './styles/index.scss';
 
 import Routes from './routes/Routes';
 import Header from './components/Header';

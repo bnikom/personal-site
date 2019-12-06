@@ -15,17 +15,17 @@ const Header = ({ GDIMPoff }) => {
               <h1 className="third">BELLA NIKOM</h1>
             </div>
             :
-            <h1>BELLA NIKOM</h1>
+           <img src="images/bella_logo.png" className="logo" alt="Bella Logo" />
           }
         </NavbarBrand>
         <NavbarToggler onClick={() => setCollapsed(!collapsed)} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/map">Where have I gone?</NavLink>
+              <NavLink href="/map" className="pl-2">Where have I gone?</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/charities">Charities ~~~~</NavLink>
+              <NavLink href="/charities" className="pl-2">Charities ~~~~</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
