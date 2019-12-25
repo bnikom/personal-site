@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Col, Row } from 'reactstrap';
 import Toggle from 'react-toggle'
 
@@ -10,7 +10,7 @@ const Footer = ({ handleGDIMPTheme, GDIMPoff }) => {
         <Col>
           <h5 className="font-weight-bold">Important Links/Things:</h5>
           <ul className="list-unstyled ml-4">
-            <li>The world is ending!!!!!!</li>
+            <li>(The world is ending!!!!!!)</li>
             <li><a href="https://www.linkedin.com/in/bnikom/">LinkedIn</a></li>
             <li><a href="https://github.com/bnikom">Github</a></li>
             <li><a href="https://twitter.com/thebasketcase25">Personal Twitter</a></li>

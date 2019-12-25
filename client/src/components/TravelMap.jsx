@@ -19,7 +19,6 @@ const TravelMap = () => {
 
   const handleMapClick = ({ lngLat, leftButton }) => {
     if (!leftButton) return;
-    const [longitude, latitude] = lngLat;
   }
 
   return (
