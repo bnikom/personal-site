@@ -4,6 +4,7 @@ import './styles/index.scss';
 import Routes from './routes/Routes';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import SEO from './components/SEO';
 
 function App() {
   const [ GDIMPoff, handleGDIMPoff ] = useState((localStorage.getItem('GDIMPoff') === 'true')|| false);
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div className="App">
+      <SEO />
       <Header
         GDIMPoff={GDIMPoff}
       />
