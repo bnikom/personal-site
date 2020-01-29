@@ -27,6 +27,9 @@ const Header = ({ GDIMPoff }) => {
             <NavItem>
               <NavLink href="/charities" className="pl-2">Charities ~~~~</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="/imagezoom" className="pl-2">Image Zoom Library</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>

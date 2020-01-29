@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Home from '../components/Home';
 import TravelMap from '../components/TravelMap';
 import Charities from '../components/Charities';
+import ImageZoomExamples from '../components/ImageZoomExamples';
 
 
 const Routes = ({ GDIMPoff }) => {
@@ -20,6 +21,10 @@ const Routes = ({ GDIMPoff }) => {
         <Route
           path='/map'
           component={TravelMap}
+        />
+        <Route
+          path='/imagezoom'
+          component={ImageZoomExamples}
         />
         <Route
           path='/charities'
