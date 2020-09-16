@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ReactMapGL, { NavigationControl, Marker, Popup } from 'react-map-gl';
 import uuidv1 from 'uuid/v1';
-import { Row, Col } from 'reactstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -81,7 +80,6 @@ const TravelMap = () => {
           </Popup>
         }
       </ReactMapGL>
-
     </main>
   );
 };

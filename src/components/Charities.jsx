@@ -26,7 +26,7 @@ const Home = ({ GDIMPoff }) => {
           <Col>
             <img src="images/give-dat.png" alt="give dat" className="give-dat" />
             <img src="images/money.gif" alt="green money" className="green-money" />
-            <img src="images/money3.gif" className="fire-money" alt="fire money" />
+            <img src="images/money3.gif" alt="fire money"  className="fire-money"/>
           </Col>
         }
       </Row>
