@@ -14,7 +14,7 @@
     "express": "^4.16.4",
     "mapbox-gl": "^1.4.0",
     "morgan": "^1.10.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "react-helmet": "^5.2.1",
