@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router';
+import { Routes, Route } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 
 import Home from '../components/Home';
@@ -8,31 +8,30 @@ import Charities from '../components/Charities';
 import Resume from '../components/Resume';
 
 
-const Routes = ({ GDIMPoff }) => {
+const RoutesGroup = ({ GDIMPoff }) => {
   const context = {};
   return (
     <BrowserRouter context={context}>
-      <Switch>
+      <Routes>
         <Route
-          exact
           path='/'
-          render={(props) => <Home {...props} GDIMPoff={GDIMPoff} />}
+          element={<Home GDIMPoff={GDIMPoff} />}
         />
         <Route
           path='/map'
-          component={TravelMap}
+          element={<TravelMap />}
         />
         <Route
           path='/charities'
-          render={(props) => <Charities {...props} GDIMPoff={GDIMPoff} />}
+          element={<Charities GDIMPoff={GDIMPoff} />}
         />
         <Route
           path='/resume'
-          component={Resume}
+          element={<Resume />}
         />
-      </Switch>
+      </Routes>
     </BrowserRouter>
   );
 }
 
-export default Routes;
+export default RoutesGroup;

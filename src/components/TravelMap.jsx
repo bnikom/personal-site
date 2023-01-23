@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import ReactMapGL, { NavigationControl, Marker, Popup } from 'react-map-gl';
-import uuidv1 from 'uuid/v1';
-
+import Map, { NavigationControl, Marker, Popup } from 'react-map-gl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import mapData from '../mapData';
@@ -11,6 +9,8 @@ const INITIAL_VIEWPORT = {
   longitude: -2.0274437500523406,
   zoom: 1,
 }
+
+const MAPBOX_TOKEN = 'pk.eyJ1IjoiYm5pa29tIiwiYSI6ImNsZDhmb3hhNTF1bHUzcHA1bXJ3OTl5dWkifQ.FWqPpoNANuyOnZxHmYJYGw'
 
 const TravelMap = () => {
   const [viewport, setViewport] = useState(INITIAL_VIEWPORT);
@@ -23,25 +23,24 @@ const TravelMap = () => {
 
   return (
     <main>
-      <ReactMapGL
-        width='100%'
-        // height="calc(100vh - 64px)"
-        height="80vh"
+      <Map
+        style={{width: '100%', height: '80vh' }}
         mapStyle="mapbox://styles/mapbox/streets-v9"
-        mapboxApiAccessToken="pk.eyJ1IjoiYm5pa29tIiwiYSI6ImNrMHNxbjgwNjAxN2MzbnBlZXNnZ3Rtc2gifQ.PQbU0Gc9uGPX90rMxbJcaw"
-        onViewportChange={({ width, height, ...etc}) => setViewport(etc)}
+        mapboxAccessToken={MAPBOX_TOKEN}
+        initialViewState={{
+          zoom: 1
+        }}
         onClick={handleMapClick}
         /* scrollZoom={!mobileSize} */
-        {...viewport}
       >
         <div className="navigation-control">
           <NavigationControl
             onViewportChange={viewport => setViewport(viewport)}
           />
         </div>
-        {mapData.map(pin => (
+        {mapData.map((pin, index) => (
           <Marker
-            key={uuidv1()}
+            key={index}
             latitude={pin.latitude}
             longitude={pin.longitude}
             offsetLeft={-10}
@@ -67,19 +66,19 @@ const TravelMap = () => {
             anchor="top"
             >
             <div>
-              <div className="justify-content-center d-flex">
+              <div className="justify-content-center d-flex travel-border">
                 <img
                   src={pin.image}
                   className="travel-img"
                   alt={`${pin.city}, ${pin.country}`}
                 />
                 </div>
-                <p className="mb-0 mt-1">{pin.city}, {pin.country}</p>
-                <p className="comments-pin mb-0">{pin.comments}</p>
+                <p className="comments-pin mb-0 mt-1">{pin.city}, {pin.country}</p>
+                <p className="comments-pin mb-0 mt-2">{pin.comments}</p>
             </div>
           </Popup>
         }
-      </ReactMapGL>
+      </Map>
     </main>
   );
 };

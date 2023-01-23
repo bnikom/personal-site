@@ -28,6 +28,9 @@ const Header = ({ GDIMPoff }) => {
               <NavLink href="/map" className="pl-2">Where have I gone?</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="https://www.whatsyourshare.ink" target="_blank" rel="noopener noreferrer" className="pl-2">What's your share?</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="/charities" className="pl-2">Charities ~~~~</NavLink>
             </NavItem>
           </Nav>
