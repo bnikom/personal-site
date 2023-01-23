@@ -4,16 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import mapData from '../mapData';
 
-const INITIAL_VIEWPORT = {
-  latitude: 37.61859557982719,
-  longitude: -2.0274437500523406,
-  zoom: 1,
-}
-
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiYm5pa29tIiwiYSI6ImNsZDhmb3hhNTF1bHUzcHA1bXJ3OTl5dWkifQ.FWqPpoNANuyOnZxHmYJYGw'
 
 const TravelMap = () => {
-  const [viewport, setViewport] = useState(INITIAL_VIEWPORT);
   const [showPopup, setShowPopup] = useState(false);
   const [pin, setPin] = useState(null);
 
@@ -31,12 +24,9 @@ const TravelMap = () => {
           zoom: 1
         }}
         onClick={handleMapClick}
-        /* scrollZoom={!mobileSize} */
       >
         <div className="navigation-control">
-          <NavigationControl
-            onViewportChange={viewport => setViewport(viewport)}
-          />
+          <NavigationControl />
         </div>
         {mapData.map((pin, index) => (
           <Marker
