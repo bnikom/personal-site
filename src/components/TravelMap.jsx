@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+// eslint-disable-next-line import/no-webpack-loader-syntax, no-unused-vars
+import mapboxgl from '!mapbox-gl';
 import Map, { NavigationControl, Marker, Popup } from 'react-map-gl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
