@@ -14,6 +14,8 @@ try {
   app.use(express.static('public'));
   
   app.use('/images', express.static('images'))
+  app.use('/fonts', express.static('fonts'))
+
 
   // UNCOMMENT for production mode
   //app.use(express.static('build'))
