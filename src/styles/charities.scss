@@ -18,3 +18,20 @@
     transform:rotateY(720deg);
   }
 }
+
+.home-container {
+  ul {
+    list-style: none;
+    padding: 0px;
+    
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+ul li:before {
+    content: '\2605';
+    margin: 0 1em;
+  }
+}
+

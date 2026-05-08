@@ -5,8 +5,13 @@ const Home = ({ GDIMPoff }) => {
   return (
     <main className="home-container">
       <h1>Welcome to Bella Nikom's Site!</h1>
-      <p>you might be wondering - who am I? good question!</p>
-      <p>ok bye now.</p>
+      <div className="home-text">
+        <p>you might be wondering - who am I?
+          <br />
+          good question!
+        </p>
+        <p>ok bye now.</p>
+      </div>
       {GDIMPoff &&
         <>
           <Row>

@@ -5,7 +5,7 @@ const Header = ({ GDIMPoff }) => {
   const [collapsed, setCollapsed] = useState(true);
 
   return (
-    <header>
+    <header id="paper-back">
       <Navbar color="faded" light>
         <NavbarBrand href="/" className="mr-auto">
           {GDIMPoff ?
