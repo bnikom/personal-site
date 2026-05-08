@@ -5,7 +5,7 @@ const Header = ({ GDIMPoff }) => {
   const [collapsed, setCollapsed] = useState(true);
 
   return (
-    <header id="paper-back">
+    <header>
       <Navbar color="faded" light>
         <NavbarBrand href="/" className="mr-auto">
           {GDIMPoff ?
@@ -15,10 +15,10 @@ const Header = ({ GDIMPoff }) => {
               <h1 className="third">BELLA NIKOM</h1>
             </div>
             :
-           <img src="images/bella_logo.png" className="logo" alt="Bella Logo" />
+           <img src="images/bella_logo_05_08_2026.png" className="logo" alt="Bella Logo" />
           }
         </NavbarBrand>
-        <NavbarToggler onClick={() => setCollapsed(!collapsed)} className="mr-2" />
+        <NavbarToggler onClick={() => setCollapsed(!collapsed)} className={collapsed ? "mr-2 menu-btn-3": "mr-2 menu-btn-3 active"} />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>

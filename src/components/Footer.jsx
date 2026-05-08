@@ -9,10 +9,11 @@ const Footer = ({ handleGDIMPTheme, GDIMPoff }) => {
       <Row>
         <Col>
           <h5 className="font-weight-bold">Important Links/Things:</h5>
-          <ul className="list-unstyled ml-4">
+          <ul className="list-unstyled link-list ml-4">
             <li>(The world is ending!!!!!!)</li>
             <li><a href="https://www.linkedin.com/in/bnikom/">LinkedIn</a></li>
             <li><a href="https://github.com/bnikom">Github</a></li>
+            <li><a href="mailto:belka.nikom@gmail.com">Contact Me</a></li>
           </ul>
         </Col>
         <Col xs={6}>
