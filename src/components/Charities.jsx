@@ -20,6 +20,8 @@ const Home = ({ GDIMPoff }) => {
             <li><a href="https://alotrolado.org/take-action/donate/">Al Otro Lado</a></li>
             <li><a href="https://www.blackgirlscode.com/donations.html">Black Girls Code</a></li>
             <li><a href="https://www.navajowaterproject.org/">Navajo Water Project</a></li>
+            <li><a href="https://www.trinityhavenindy.org/">Trinity Haven</a></li>
+            <li><a href="https://marinemegafauna.org/">Marine Megafauna Foundation</a></li>
           </ul>
         </Col>
         {GDIMPoff &&

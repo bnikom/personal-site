@@ -226,6 +226,101 @@ const mapData = [
     latitude: 10.3932,
     longitude: -75.4832,
   },
+  {
+    city: "Koh Tao",
+    country: "Thailand",
+    image: "/images/thailand.jpg", // TODO - update this image to be more travel related
+    comments: "Discovering my love for da corals and da fishies",
+    latitude: 10.3833,
+    longitude: 101.75,
+  },
+    {
+    city: "Moalboal",
+    country: "Philippines",
+    image: "/images/philippines.jpg", // TODO - update this image to be more travel related
+    comments: "Rescuing people and seeing some sardines",
+    latitude: 9.9208,
+    longitude: 123.4107,
+  },
+  {
+    city: "Labuan Bajo",
+    country: "Indonesia",
+    image: "/images/indonesia.jpg",  // TODO - update this image to be more travel related
+    comments: "Seeing some above-water dragons (komodo) and below water dragons (mantas)",
+    latitude: -0.4833,
+    longitude: 117.15,
+  },
+  {
+    city: 'Ho Chi Minh City',  
+    country: 'Vietnam',
+    image: '/images/vietnam.jpg', // TODO - update this image to be more travel related
+    comments: 'Cheap, beautiful and loud - just like me :)',
+    latitude: 10.762622,
+    longitude: 106.660172,
+  },
+  {
+    city: 'Penang',
+    country: 'Malaysia',
+    image: '/images/malaysia.jpg', // TODO - update this image to be more travel related
+    comments: 'the food here is generational - literally',
+    latitude: 5.4164,
+    longitude: 100.3327,
+  },
+  {
+    city: 'Kyoto',
+    country: 'Japan',
+    image: '/images/kyoto.jpg', // TODO - update this image to be more travel related
+    comments: 'Temples, rivers, mountains, and quiet"',
+    latitude: 35.0116,
+    longitude: 135.7681,
+  },
+  {
+    city: "Yonaguni",
+    country: "Japan",
+    image: "/images/yonaguni.jpg", // TODO - update this image to be more travel related
+    comments: "HAMMER HAMMER HAMMER HEADS",
+    latitude: 24.4633,
+    longitude: 123.0067,
+  },
+  { 
+    city: 'Taipei',
+    country: 'Taiwan',
+    image: '/images/taiwan.jpg', // TODO - update this image to be more travel related
+    comments: 'The night markets make me hate America',
+    latitude: 25.0330,
+    longitude: 121.5654,
+  },
+  {
+    city: "Ha Giang",
+    country: "Vietnam",
+    image: "/images/ha_giang.jpg",   // TODO - update this image to be more travel related
+    comments: "A motorcycle tour across the northenmost part of Vietnam",
+    latitude: 22.8333,
+    longitude: 105.9667,  
+  },{
+    city: 'Bangkok',
+    country: 'Thailand',
+    image: '/images/bangkok.jpg', // TODO - update this image to be more travel related
+    comments: 'Loud, dirty but filled with mango sticky rice.',
+    latitude: 13.7563,
+    longitude: 100.5018,
+  },
+  {
+    city: 'Zion National Park',
+    country: 'United States',
+    image: '/images/zion.jpg', // TODO - update this image to be more travel related
+    comments: 'Rad red rocks',
+    latitude: 37.2982,
+    longitude: -113.0263,
+  },
+  {
+    city: "Crystal River",
+    country: "United States",
+    image: "/images/crystal_river.jpg", // TODO - update this image to be more travel related
+    comments: "Bucket list item acheived - manateeeeeeeee",
+    latitude: 28.5952,
+    longitude: -82.5879,
+  }
 ];
 
 export default mapData;

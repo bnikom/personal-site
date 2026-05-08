@@ -49,6 +49,8 @@ $orange: #C9600E;
     }
   }
 
+  
+
   .nav-item {
     &:hover {
       background: white;
@@ -69,40 +71,102 @@ $orange: #C9600E;
 }
 
 .logo {
-  width: 75vw;
-  height: 10vw;
+  width: 85vw;
+  height: 15vw;
 }
 
-.normal {
-  .nav-item {
-    &:hover {
-      background: $orange !important;
+ /* Menu Button 3 
+  *  https://codepen.io/codingtuting/pen/YzKvwZX
+  */
+  .menu-btn-3 {
+
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+      height: 32px;
+      width: 40px;
+      cursor: pointer;
+  }
+        
+  .menu-btn-3 span,
+  .menu-btn-3 span::before,
+  .menu-btn-3 span::after {
+      background: #b17d4b; 
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 3px;   
+      text-align: justify;      
       
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(deg);
+      transform: rotate(180deg);
+
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+  }
+
+    .menu-btn-3 span::before {
+        margin-top:-12px;
+    }
+
+    .menu-btn-3 span::after {
+        margin-top:12px;
+    }
+
+    .menu-btn-3.active span {
+        background: transparent;
+    }
+
+    .menu-btn-3.active span::before {
+        margin-top: 0;
+
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .menu-btn-3.active span::after {
+        transform: rotate(-45deg);
+        margin-top: 0;
+    }
+
+
+.normal {
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+
+    &:focus {
+      border: none !important;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .nav-item {
+    border: 2px;
+    border-style: double;
+    padding-left: 5px;
+
+    &:hover {
+      background: #b17d4b !important;
       .nav-link {
-        color: white !important;
+        color: #F5F2E6 !important;
         font-weight: 600;
       }
     }
-  }
 
-  .navbar-light .navbar-toggler {
-    border: 3px solid #C9600E;
-  }
-
-  .nav-item:nth-child(even) {
-    background: #f2f2f2;
-    .nav-link {
-      color: #757575;
-      font-weight: 600;
-    }
-    
-  }
-  .nav-item:nth-child(odd) {
-    background: #757575;
-    .nav-link {
-      color: #f2f2f2;
-      font-weight: 600;
-    }
+     .nav-link {
+        color: #757575 !important;
+        font-weight: 600;
+      }
   }
 }
 
