@@ -1,13 +1,12 @@
-$orange: #C9600E;
+$orange: #c9600e;
 
 .gdimp {
   .slogan {
-
     .first,
     .second,
     .third {
-      font-size: calc(1rem + 5vw);
-      font-family: Verdana, serif;
+      font-size: calc(3.5rem + 5vw);
+      font-family: "Papyrus", fantasy;
       font-weight: 600;
       margin: 0;
     }
@@ -39,17 +38,22 @@ $orange: #C9600E;
 
   .navbar-light .navbar-toggler {
     border: 5px solid transparent;
-    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image: linear-gradient(
+      to bottom right,
+      #b827fc 0%,
+      #2c90fc 25%,
+      #b8fd33 50%,
+      #fec837 75%,
+      #fd1892 100%
+    );
     border-image-slice: 1;
-    &:after{
-      content: '';
+    &:after {
+      content: "";
       width: 200px;
       background: black;
       z-index: -1;
     }
   }
-
-  
 
   .nav-item {
     &:hover {
@@ -66,7 +70,14 @@ $orange: #C9600E;
     .nav-link {
       color: white;
       font-weight: 600;
-    } 
+    }
+  }
+
+  .menu-btn-3 span,
+  .menu-btn-3 span::before,
+  .menu-btn-3 span::after {
+    background: black;
+    width: 27px;
   }
 }
 
@@ -75,67 +86,65 @@ $orange: #C9600E;
   height: 15vw;
 }
 
- /* Menu Button 3 
+/* Menu Button 3 
   *  https://codepen.io/codingtuting/pen/YzKvwZX
   */
-  .menu-btn-3 {
+.menu-btn-3 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 40px;
+  cursor: pointer;
+}
 
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-      height: 32px;
-      width: 40px;
-      cursor: pointer;
-  }
-        
-  .menu-btn-3 span,
-  .menu-btn-3 span::before,
-  .menu-btn-3 span::after {
-      background: #b17d4b; 
-      content: '';
-      position: absolute;
-      width: 40px;
-      height: 3px;   
-      text-align: justify;      
-      
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -o-transform: rotate(deg);
-      transform: rotate(180deg);
+.menu-btn-3 span,
+.menu-btn-3 span::before,
+.menu-btn-3 span::after {
+  background: #b17d4b;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  text-align: justify;
 
-      -webkit-transition: .5s ease-in-out;
-      -moz-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      transition: .5s ease-in-out;
-  }
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(deg);
+  transform: rotate(180deg);
 
-    .menu-btn-3 span::before {
-        margin-top:-12px;
-    }
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
 
-    .menu-btn-3 span::after {
-        margin-top:12px;
-    }
+.menu-btn-3 span::before {
+  margin-top: -12px;
+}
 
-    .menu-btn-3.active span {
-        background: transparent;
-    }
+.menu-btn-3 span::after {
+  margin-top: 12px;
+}
 
-    .menu-btn-3.active span::before {
-        margin-top: 0;
+.menu-btn-3.active span {
+  background: transparent;
+}
 
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
+.menu-btn-3.active span::before {
+  margin-top: 0;
 
-    .menu-btn-3.active span::after {
-        transform: rotate(-45deg);
-        margin-top: 0;
-    }
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
+.menu-btn-3.active span::after {
+  transform: rotate(-45deg);
+  margin-top: 0;
+}
 
 .normal {
   .navbar-toggler {
@@ -158,16 +167,14 @@ $orange: #C9600E;
     &:hover {
       background: #b17d4b !important;
       .nav-link {
-        color: #F5F2E6 !important;
+        color: #f5f2e6 !important;
         font-weight: 600;
       }
     }
 
-     .nav-link {
-        color: #757575 !important;
-        font-weight: 600;
-      }
+    .nav-link {
+      color: #757575 !important;
+      font-weight: 600;
+    }
   }
 }
-
-
